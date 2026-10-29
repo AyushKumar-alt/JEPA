@@ -1,0 +1,71 @@
+{
+  "backbone_name": "distilbert-base-uncased",
+  "latent_dim": 768,
+  "pooling_type": "masked_mean",
+  "normalize_latents": true,
+  "tokenizer_name": "distilbert-base-uncased",
+  "full_config": {
+    "experiment": {
+      "title": "JEPA Phase 1 Full-Data Representation Learning",
+      "seed": 42,
+      "device": "cuda",
+      "output_dir": "outputs/phase1"
+    },
+    "data": {
+      "train_parquet": "data/bev-decision/train.parquet",
+      "test_parquet": "data/bev-decision/test.parquet",
+      "val_ratio": 0.1,
+      "min_words_total": 8,
+      "min_context_words": 3,
+      "min_target_words": 3,
+      "strategy": "span_mask",
+      "mask_ratio": 0.25,
+      "context_ratio": 0.6,
+      "deduplicate_states": true,
+      "num_workers": 4,
+      "max_train_samples": null
+    },
+    "model": {
+      "backbone_name": "distilbert-base-uncased",
+      "latent_dim": 768,
+      "predictor_hidden_dim": 768,
+      "predictor_num_layers": 2,
+      "pooling_type": "masked_mean",
+      "normalize_latents": true,
+      "ema_momentum": 0.996,
+      "dropout": 0.1
+    },
+    "training": {
+      "max_seq_length": 256,
+      "batch_size": 32,
+      "num_epochs": 5,
+      "checkpoint_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "encoder_lr": 3e-05,
+      "predictor_lr": 0.0001,
+      "weight_decay": 0.01,
+      "max_grad_norm": 1.0,
+      "mixed_precision": "bf16",
+      "warmup_ratio": 0.05,
+      "logging_steps": 100,
+      "save_every_epoch": true
+    },
+    "loss": {
+      "loss_type": "normalized_mse",
+      "variance_threshold": 0.001,
+      "similarity_threshold": 0.9,
+      "min_mean_std_threshold": 0.012
+    },
+    "pilot": {
+      "num_samples": 256,
+      "batch_size": 32,
+      "num_steps": 15,
+      "max_seq_length": 256
+    }
+  }
+}

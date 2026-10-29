@@ -1,0 +1,35 @@
+{
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.0002229240623749264,
+      "val_loss": 0.00011387282216535204,
+      "val_mean_latent_norm": 1.0,
+      "val_mean_latent_std": 0.027737632361722404,
+      "val_mean_pairwise_similarity": 0.32811268650252245,
+      "epoch_duration_sec": 33.3303427696228,
+      "peak_vram_mb": 2010.27294921875
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.00015297366461970767,
+      "val_loss": 0.0001642174616533684,
+      "val_mean_latent_norm": 1.0,
+      "val_mean_latent_std": 0.030084294266998768,
+      "val_mean_pairwise_similarity": 0.2246324592109384,
+      "epoch_duration_sec": 33.25069713592529,
+      "peak_vram_mb": 2010.27294921875
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0001937276211039245,
+      "val_loss": 0.00020897387246511528,
+      "val_mean_latent_norm": 1.0,
+      "val_mean_latent_std": 0.030454810676646644,
+      "val_mean_pairwise_similarity": 0.2102470171862635,
+      "epoch_duration_sec": 33.49790835380554,
+      "peak_vram_mb": 2010.27294921875
+    }
+  ],
+  "total_epochs": 3
+}

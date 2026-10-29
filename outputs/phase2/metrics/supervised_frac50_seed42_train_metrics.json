@@ -1,0 +1,43 @@
+{
+  "model_type": "supervised",
+  "label_fraction": 0.5,
+  "seed": 42,
+  "epochs_trained": 3,
+  "best_epoch": 3,
+  "best_val_loss": 0.9730515991901739,
+  "best_val_acc": 0.6373134889314842,
+  "duration_sec": 877.0862486362457,
+  "checkpoint_path": "/home/mml_07/Desktop/ATDL_Final_Project/JEPA_Model/outputs/phase2/checkpoints/supervised_frac50_seed42_best.pt",
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2486394122429394,
+      "val_loss": 1.1106749179420867,
+      "val_accuracy": 0.5849212613222085,
+      "val_choice_acc": 0.4187349879903923,
+      "val_noul_acc": 0.828051948051948,
+      "val_score_acc": 0.526046304541407,
+      "val_score_mae": 0.7916295636687445
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0094404901141676,
+      "val_loss": 0.9940736235503069,
+      "val_accuracy": 0.6243845604540159,
+      "val_choice_acc": 0.47493995196156924,
+      "val_noul_acc": 0.8476883116883117,
+      "val_score_acc": 0.5614425645592164,
+      "val_score_mae": 0.7281834372217275
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.927489014464555,
+      "val_loss": 0.9730515991901739,
+      "val_accuracy": 0.6373134889314842,
+      "val_choice_acc": 0.4989591673338671,
+      "val_noul_acc": 0.8483116883116883,
+      "val_score_acc": 0.5699020480854853,
+      "val_score_mae": 0.7226179875333927
+    }
+  ]
+}

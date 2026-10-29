@@ -1,0 +1,32 @@
+{
+  "experiment_title": "JEPA Phase 1 Representation Learning",
+  "checkpoint_evaluated": "/home/mml_07/Desktop/ATDL_Final_Project/JEPA_Model/outputs/phase1/checkpoints/checkpoint_best.pt",
+  "checkpoint_exists": true,
+  "reusable_encoder_verified": true,
+  "parameter_counts": {
+    "total_parameters": 133913088,
+    "trainable_parameters": 67548672,
+    "context_encoder_parameters": 66364416,
+    "predictor_parameters": 1184256,
+    "target_encoder_parameters": 66364416
+  },
+  "epoch_metrics_summary": {
+    "total_epochs_recorded": 3,
+    "best_val_loss": 0.00011387282216535204,
+    "final_val_loss": 0.00020897387246511528,
+    "final_val_dim_std": 0.030454810676646644,
+    "final_val_pairwise_sim": 0.2102470171862635
+  },
+  "sample_encoder_diagnostics": {
+    "test_sample_count": 4,
+    "output_shape": [
+      4,
+      768
+    ],
+    "mean_norm": 1.0,
+    "mean_dim_std": 0.018149256706237793,
+    "mean_pairwise_similarity": 0.5875980854034424,
+    "collapsed_dim_fraction": 0.1640625,
+    "has_collapse_warning": true
+  }
+}

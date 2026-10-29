@@ -1,0 +1,8 @@
+{
+  "backbone_name": "distilbert-base-uncased",
+  "latent_dim": 768,
+  "pooling_type": "masked_mean",
+  "normalize_latents": true,
+  "model_type": "mlm_pretrained",
+  "best_val_loss": 1.2834411802615084
+}

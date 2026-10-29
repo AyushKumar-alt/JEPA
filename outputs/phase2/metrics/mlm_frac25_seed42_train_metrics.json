@@ -1,0 +1,43 @@
+{
+  "model_type": "mlm",
+  "label_fraction": 0.25,
+  "seed": 42,
+  "epochs_trained": 3,
+  "best_epoch": 3,
+  "best_val_loss": 1.112119814004302,
+  "best_val_acc": 0.6362235501935581,
+  "duration_sec": 466.88417744636536,
+  "checkpoint_path": "/home/mml_07/Desktop/ATDL_Final_Project/JEPA_Model/outputs/phase2/checkpoints/mlm_frac25_seed42_best.pt",
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3390604230490597,
+      "val_loss": 1.2479897651076652,
+      "val_accuracy": 0.583793738489871,
+      "val_choice_acc": 0.455164131305044,
+      "val_noul_acc": 0.8153766233766234,
+      "val_score_acc": 0.4452359750667854,
+      "val_score_mae": 0.9583704363312555
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1407452633506374,
+      "val_loss": 1.1349371023949084,
+      "val_accuracy": 0.6272785357236818,
+      "val_choice_acc": 0.511529223378703,
+      "val_noul_acc": 0.8311688311688312,
+      "val_score_acc": 0.5122439893143366,
+      "val_score_mae": 0.9020480854853072
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.062048387299314,
+      "val_loss": 1.112119814004302,
+      "val_accuracy": 0.6362235501935581,
+      "val_choice_acc": 0.5285028022417935,
+      "val_noul_acc": 0.832935064935065,
+      "val_score_acc": 0.5142475512021372,
+      "val_score_mae": 0.8285841495992876
+    }
+  ]
+}

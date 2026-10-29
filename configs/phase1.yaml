@@ -1,0 +1,57 @@
+# Configuration for Phase 1 JEPA Self-Supervised Text Representation Learning
+
+experiment:
+  title: "JEPA Phase 1 Full-Data Representation Learning"
+  seed: 42
+  device: "cuda"
+  output_dir: "outputs/phase1"
+
+data:
+  train_parquet: "data/bev-decision/train.parquet"
+  test_parquet: "data/bev-decision/test.parquet"
+  val_ratio: 0.10
+  min_words_total: 8
+  min_context_words: 3
+  min_target_words: 3
+  strategy: "span_mask"  # "span_mask" (data2vec / JEPA design: context=masked, target=full)
+  mask_ratio: 0.25
+  context_ratio: 0.60
+  deduplicate_states: true
+  num_workers: 4
+  max_train_samples: null  # null for all eligible training states
+
+model:
+  backbone_name: "distilbert-base-uncased"
+  latent_dim: 768
+  predictor_hidden_dim: 768
+  predictor_num_layers: 2
+  pooling_type: "masked_mean"
+  normalize_latents: true
+  ema_momentum: 0.996
+  dropout: 0.10
+
+training:
+  max_seq_length: 256
+  batch_size: 32
+  num_epochs: 5
+  checkpoint_epochs: [1, 2, 3, 4, 5]
+  encoder_lr: 3.0e-5
+  predictor_lr: 1.0e-4
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  mixed_precision: "bf16"  # "bf16", "fp16", or "fp32"
+  warmup_ratio: 0.05
+  logging_steps: 100
+  save_every_epoch: true
+
+loss:
+  loss_type: "normalized_mse"  # "normalized_mse", "cosine", "mse", "smooth_l1"
+  variance_threshold: 0.001
+  similarity_threshold: 0.90
+  min_mean_std_threshold: 0.012
+
+pilot:
+  num_samples: 256
+  batch_size: 32
+  num_steps: 15
+  max_seq_length: 256

@@ -1,0 +1,114 @@
+{
+  "checkpoint": "supervised_frac100_seed42_best.pt",
+  "model_type": "supervised",
+  "label_fraction": 1.0,
+  "seed": 42,
+  "total_test_evaluated": 44162,
+  "overall_accuracy": 0.6899823377564422,
+  "overall_macro_f1": 0.6042084959747377,
+  "task_accuracies": {
+    "noul": 0.853353941267388,
+    "choice": 0.6094642664654522,
+    "score": 0.5682179582317396
+  },
+  "task_macro_f1s": {
+    "noul": 0.8377302606970529,
+    "choice": 0.4708718711726448,
+    "score": 0.5040233560545155
+  },
+  "score_mae": 0.7482243188805258,
+  "domain_breakdown": {
+    "Browser interaction": {
+      "accuracy": 0.7657342657342657,
+      "macro_f1": 0.7640670320886148,
+      "sample_count": 286
+    },
+    "Civic and safety operations": {
+      "accuracy": 0.5583756345177665,
+      "macro_f1": 0.22909538363831222,
+      "sample_count": 197
+    },
+    "Contract evidence": {
+      "accuracy": 0.371875,
+      "macro_f1": 0.3487143537000755,
+      "sample_count": 320
+    },
+    "Engagement and ranking": {
+      "accuracy": 0.5066666666666667,
+      "macro_f1": 0.4503862150920975,
+      "sample_count": 75
+    },
+    "Financial reporting and banking": {
+      "accuracy": 0.35555555555555557,
+      "macro_f1": 0.28859054556905595,
+      "sample_count": 1260
+    },
+    "Game-state decisions": {
+      "accuracy": 0.8548307994114762,
+      "macro_f1": 0.8175198950899034,
+      "sample_count": 2039
+    },
+    "Reading comprehension": {
+      "accuracy": 0.6279887482419128,
+      "macro_f1": 0.5650302445410352,
+      "sample_count": 1422
+    },
+    "Response preference and quality": {
+      "accuracy": 0.4228949858088931,
+      "macro_f1": 0.3762565419937559,
+      "sample_count": 3171
+    },
+    "Retail, product, and shopping": {
+      "accuracy": 0.6966531243954344,
+      "macro_f1": 0.47123777834621167,
+      "sample_count": 5169
+    },
+    "Scientific and paper understanding": {
+      "accuracy": 0.7755905511811023,
+      "macro_f1": 0.7629816747945616,
+      "sample_count": 508
+    },
+    "Sensory quality rating": {
+      "accuracy": 0.34615384615384615,
+      "macro_f1": 0.167838505421654,
+      "sample_count": 260
+    },
+    "Sentiment, emotion, and moderation": {
+      "accuracy": 0.8493162616496821,
+      "macro_f1": 0.6686379771338692,
+      "sample_count": 11481
+    },
+    "Software engineering and code": {
+      "accuracy": 0.2594409024031388,
+      "macro_f1": 0.22205072499365744,
+      "sample_count": 2039
+    },
+    "Software security": {
+      "accuracy": 0.6848214285714286,
+      "macro_f1": 0.6484864254108307,
+      "sample_count": 2240
+    },
+    "Spam detection": {
+      "accuracy": 0.966789667896679,
+      "macro_f1": 0.9666077956216372,
+      "sample_count": 271
+    },
+    "Spatial and logical reasoning": {
+      "accuracy": 0.5537929389312977,
+      "macro_f1": 0.3227146502163313,
+      "sample_count": 8384
+    },
+    "Support and intent routing": {
+      "accuracy": 0.9275521405049396,
+      "macro_f1": 0.8793416930658821,
+      "sample_count": 2733
+    },
+    "Tool and workflow decisions": {
+      "accuracy": 0.9627221499783268,
+      "macro_f1": 0.9621039486735706,
+      "sample_count": 2307
+    }
+  },
+  "eval_duration_sec": 30.830276012420654,
+  "throughput_samples_per_sec": 1432.4231149344355
+}
